@@ -1,7 +1,7 @@
 <h1 id="communication-and-feedback">Communication and feedback</h1>
 <h2 id="feedback-as-much-as-possible">Feedback (as much as possible)</h2>
 <ul>
-  <li>Create an <a href="https://github.com/imaginglectures/Quantitative-Big-Imaging-2024/issues">issue</a> (on the group site that everyone can see and respond to, requires a Github account)</li>
+  <li>Create an <a href="https://github.com/imaginglectures/Quantitative-Big-Imaging-2025/issues">issue</a> (on the group site that everyone can see and respond to, requires a Github account)</li>
   <li>Or send direct email to <a href="mailto:anders.kaestner@psi.ch">Anders Kaestner</a></li>
 </ul>
 
