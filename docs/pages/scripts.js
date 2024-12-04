@@ -29,9 +29,9 @@ function show_text(text,dest)
 
 function load_table(dest)
 {
-    load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/weeklyplan.txt',dest);
+    load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/weeklyplan.txt',dest);
 
-    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/weeklyplan.json';
+    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/weeklyplan.json';
 
     fetch(url)
       .then(response => response.json())
@@ -78,9 +78,9 @@ function load_table(dest)
 
 function load_dataset_table(dest)
 {
-    load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/datasets.txt',dest);
+    load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/datasets.txt',dest);
 
-    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/datasets.json';
+    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/datasets.json';
 
     fetch(url)
       .then(response => response.json())
@@ -112,8 +112,8 @@ function load_dataset_table(dest)
 
 function load_project_table(dest)
 {
-  load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/projects.txt',dest);
-    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/projects.json';
+  load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/projects.txt',dest);
+    const url = 'https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/projects.json';
 
     fetch(url)
       .then(response => response.json())
@@ -126,7 +126,7 @@ function load_project_table(dest)
             document.getElementById(dest).innerHTML += "<p>"+item.description+"</p>";
             if (item.image != "")
             {
-                document.getElementById(dest).innerHTML += "<img src='https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/pages/"+item.image+"' alt='"+item.title+"' height='100px'/>";
+                document.getElementById(dest).innerHTML += "<img src='https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/"+item.image+"' alt='"+item.title+"' height='100px'/>";
             }
             document.getElementById(dest).innerHTML += "<p><b>Task:</b> "+item.task+"</p>";
             document.getElementById(dest).innerHTML += "<p><b>Methods:</b> "+item.methods+"</p>";
