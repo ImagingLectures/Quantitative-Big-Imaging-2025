@@ -1,0 +1,14 @@
+# Book settings
+title: Quantitative Big Imaging - Introduction
+
+author: Anders Kaestner
+#logo: 'images/logo.png'
+only_build_toc_files: true
+
+execute:
+  timeout: -1
+  execute_notebooks: auto
+
+latex:
+  latex_documents:
+     targetname: QBI-Lecture01-Introduction.tex
