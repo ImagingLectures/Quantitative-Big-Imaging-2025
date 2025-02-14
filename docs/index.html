@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+      crossorigin="anonymous">
+  </head>
+  
+  <script src="https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/scripts.js"></script>
+
+  <body>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">QBI 2025</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/maintext.txt','mainview')">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Details
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#" onclick="load_table('mainview')">Weekly lecture plan</a></li>
+                <li><a class="dropdown-item" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/exercises.txt','mainview')">Exercises</a></li>
+                <li><a class="dropdown-item" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/communication.txt','mainview')">Communication and feedback</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/dependencies.txt','mainview')">Software dependencies</a></li>
+                <li><a class="dropdown-item" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/otherstuff.txt','mainview')">Other relevant information</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/learningobjectives.txt','mainview')">Learning objectives</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/targetaudience.txt','mainview')">Target audience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="load_project_table('mainview')">Projects</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Exam
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="nav-link" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/finalexam.txt','mainview')">Final exam</a></li>
+                <li><a class="nav-link" href="#" onclick="load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/example_exam.txt','mainview')">Example exam questions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Previous years
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://github.com/Quantitative-Big-Imaging/Quantitative-Big-Imaging-2016/tree/master" >2016</a></li>
+                <li><a class="dropdown-item" href="https://imaginglectures.github.io/Quantitative-Big-Imaging-2020/" >2020</a></li>
+                <li><a class="dropdown-item" href="https://imaginglectures.github.io/Quantitative-Big-Imaging-2021/" >2021</a></li>
+                <li><a class="dropdown-item" href="https://imaginglectures.github.io/Quantitative-Big-Imaging-2022/" >2022</a></li>
+                <li><a class="dropdown-item" href="https://imaginglectures.github.io/Quantitative-Big-Imaging-2023/" >2023</a></li>
+                <li><a class="dropdown-item" href="https://imaginglectures.github.io/Quantitative-Big-Imaging-2024/" >2024</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+
+
+  <!-- The main container -->
+  <div class="container">
+    <div class="mt-4 p-5 bg-light rounded" id="mainview">
+      <h1>Welcome</h1>
+      <p>Welcome text</p>
+    </div>
+
+  </div>
+    <!-- The footer container -->
+  <div class="container">
+    <div class="mt-4 p-5 bg-light text-white rounded">
+        <p>(c) 2025, Anders Kaestner</p>
+        <p><a href="https://github.com/ImagingLectures/Quantitative-Big-Imaging-2025">Github repository</a></p>
+    </div>
+  </div>
+
+  <script>
+    //show_text("<h1>Hej hopp</h1><p>Some text</p>","mainview");
+    document.onload = load_text("https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/maintext.txt","mainview");
+  </script>
+  
+
+  <!-- Need to have JQuery and Javascript for DropDown Actions to work -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+    crossorigin="anonymous">
+  </script>
+  <!-- Latest compiled and minified JavaScript -->  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous">
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+    crossorigin="anonymous">
+  </script> -->
+
+</body>
+</html>
