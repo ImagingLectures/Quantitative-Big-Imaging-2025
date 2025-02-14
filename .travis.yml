@@ -1,0 +1,63 @@
+language: python
+os: linux
+dist: focal
+python:
+  - "3.7"
+
+notifications:
+  email: false
+
+addons:
+  apt:
+    update: true
+    packages: 
+      - texlive
+      - texlive-xetex
+      - texlive-fonts-recommended
+      - texlive-fonts-extra
+      - texlive-latex-extra
+      - texlive-science
+      - latexmk
+      - fonts-freefont-otf
+
+cache:
+  directories:
+   - $HOME/.cache/pip
+
+env:
+  matrix:
+    - DISTRIB="conda" PYTHON_VERSION="3.7"
+
+install: 
+   - source circleci/travis_install.sh
+   - source circleci/travis_conda.sh
+  #  - ipython kernel install --user --name testkernel
+  #  - jupyter kernelspec list
+
+script:
+   - for f in `ls building/build*.sh`; do source $f; done
+  # - mkdir ./docs/lectures/lecture-01
+  # - jupyter nbconvert Lectures/Lecture-01/01-Introduction.ipynb --ExecutePreprocessor.timeout=600 --to slides --execute --output-dir='./docs/lectures/lecture-01'
+  # - cp -r Lectures/Lecture-01/figures Lectures/Lecture-01/movies docs/lectures/lecture-01/
+  # - shopt -s globstar
+  # - for nb in **/*ipynb; do
+  #   if [[ $nb = *"Kaggle"* ]]; then
+  #       echo "skipping kaggle kernel $nb";
+  #   else     
+  #     jupyter nbconvert --ExecutePreprocessor.timeout=3600 --ExecutePreprocessor.kernel_name=testkernel --execute "$nb" --to markdown |& tee nb_to_md.txt;
+  #     traceback=$(grep "Traceback (most recent call last):" nb_to_md.txt);
+  #     if [[ $traceback ]]; then
+  #         exit 1;
+  #     fi;
+  #   fi;
+  #   done
+
+deploy:
+   provider: pages
+   skip_cleanup: true
+   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+   keep_history: true
+   file: "Lectures/Lecture-01/_build/latex/QBI-Lecture01-Introduction.pdf"
+   target_branch: gh-pages
+   on:
+     branch: main
