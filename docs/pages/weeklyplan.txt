@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:98e67d9c8434acb5556fd617ac21206d17a486d226307862c74fd55c53cf805c
-size 1020
+<h1 >QBI 2025 - Weekly Plan </h1>
+
+<p>Please note that the Lecture Slides and PDF do not have active source codes; this is only available in the notebook version of the lecture notes. The lectures will be recorded and uploaded on the YouTube <a href="https://www.youtube.com/playlist?list=PLcDfeQH_rVdZY7IfZc56yG4FI5rYvDZqY">QBI 2025 Playlist</a>. The lectures are meant to be followed chronologically, and each has a corresponding hands-on exercise.</p>
+
+<table class="table table-bordered" id="weeklyTable" width="1400px">
+  <thead class="thead-light">
+    <tr>
+      <th style="width:3em">#</th>
+      <th style="width:60px">Icon</th>
+      <th style="width:65em">Title</th>
+      <th style="width:8em">Date</th>
+      <th style="width:12em">Notebook</th>
+      <th style="width:12em">Slides</th>
+      <th style="width:12em">PDF</th>
+      <th style="width:12em">Videos</th>
+      <th style="width:12em">Exercises</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table data will be inserted here -->
+  </tbody>
+</table>

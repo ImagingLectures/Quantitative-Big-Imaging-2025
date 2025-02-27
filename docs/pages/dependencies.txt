@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2a14a3430da337a8a38628d555c77c12eb67b55cd1e73a7aff5c26e9eab15b2
-size 1089
+<h1 id="software-dependencies">Software Dependencies</h1>
+
+<p>The course, slides and exercises are primarily done using Python 3.11 and Jupyter Notebook. An environment file can be found at <a href="https://github.com/ImagingLectures/Quantitative-Big-Imaging-2025/blob/main/environment.yml">environment.yml</a>.
+<h2 id="all-lectures">All Lectures</h2>
+<p>The packages which are required for all lectures</p>
+<ul>
+  <li>numpy</li>
+  <li>matplotlib</li>
+  <li>scipy</li>
+  <li>scikit-image</li>
+  <li>scikit-learn</li>
+  <li>ipyvolume</li>
+</ul>
+
+<h2 id="machine-learning-packages">Machine Learning Packages</h2>
+<p>For machine learning and big data lectures a few additional packages are required</p>
+<ul>
+  <li>tensorflow</li>
+  <li>pytorch</li>
+  <li>opencv</li>
+  <li>dask</li>
+  <li>dask_ndmeasure</li>
+  <li>dask_ndmorph</li>
+  <li>dask_ndfilter</li>
+</ul>
+
+<h2 id="image-registration--medical-image-data">Image Registration / Medical Image Data</h2>
+<p>For the image registration lecture and medical image data</p>
+<ul>
+  <li>itk</li>
+  <li>SimpleITK</li>
+  <li>itkwidgets</li>
+</ul>

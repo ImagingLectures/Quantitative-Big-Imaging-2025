@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d70d4f9e0b30ae4ad5cac725e973dddc085087f59b80b5125d18f28302d04d6
-size 1370
+<h1 id="quantitative-big-imaging-course-2025">Quantitative Big Imaging Course 2025</h1>
+
+<p>Here are the lectures, exercises, and additional course materials corresponding to the spring semester 2025 course at ETH Zurich, <a href="https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=188686&semkez=2025S&ansicht=LEHRVERANSTALTUNGEN&lang=en">227-0966-00L</a>: Quantitative Big Imaging.</p>
+
+<h2 id="detailed-information">Detailed information</h2>
+<ul>
+  <li><a href="javascript:load_table('mainview')">Weekly lecture plan</a></li>
+  <li><a href="javascript:load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/exercises.txt','mainview')">Exercises</a></li>
+  <li><a href="javascript:load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/communication.txt','mainview')">Communication and Feedback</a></li>
+  <li><a href="javascript:load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/dependencies.txt','mainview')">Software dependencies</a></li>
+  <li><a href="javascript:load_text('https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/pages/otherstuff.txt','mainview')">Other relevant material</a></li>
+</ul>
+
+<img src='https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/figures/iconsnail.svg' alt='Lecture icons' height='200px'/>
