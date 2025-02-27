@@ -1,5 +1,0 @@
-format: jb-article
-root: preface
-sections:
-- file: 06-ShapeAnalysis
-- file: 06-AdvancedShapeAndTexture

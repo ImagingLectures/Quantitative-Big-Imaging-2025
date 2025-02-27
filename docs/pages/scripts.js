@@ -137,3 +137,4 @@ function load_project_table(dest)
         .catch(error => console.error('Error:', error));
     });
 }
+

@@ -1,5 +1,0 @@
-format: jb-article
-root: preface
-sections:
-- file: 05-AdvancedSegmentation
-- file: 05-SupervisedSegmentation
