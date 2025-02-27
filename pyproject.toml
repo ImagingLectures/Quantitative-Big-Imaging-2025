@@ -5,11 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "albumentations>=2.0.4",
     "ipykernel>=6.29.5",
     "ipython>=8.32.0",
     "matplotlib>=3.10.0",
     "numpy>=2.2.2",
+    "pandas>=2.2.3",
     "pytest>=8.3.4",
     "scikit-image>=0.25.1",
+    "scikit-learn>=1.6.1",
     "scipy>=1.15.1",
+    "seaborn>=0.13.2",
 ]
