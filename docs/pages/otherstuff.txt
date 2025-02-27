@@ -44,4 +44,3 @@
 <ul>
   <li><a href="https://rawgithub.com/kmader/Quantitative-Big-Imaging-2016/master/Lectures/12-DeepLearning.pdf">Slides</a></li>
 </ul>
-

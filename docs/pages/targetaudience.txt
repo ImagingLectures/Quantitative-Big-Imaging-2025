@@ -11,4 +11,3 @@ to contact <a href="anders.kaestner@psi.ch">Anders Kaestner</a> directly.</p>
   <li>Successful students typically spend a few hours a week working on the exercises to really understand the material.</li>
   <li>More advanced students who are already very familiar with Python, C++, or Java are also encouraged to take the course and will have the opportunity to develop more of their own tools or explore topics like machine learning in more detail.</li>
 </ul>
-

@@ -161,4 +161,3 @@ Morphological image processing
     <li>What is a dead-lock?</li>
     <li>What is queue computing.</li>
 </ol>
-

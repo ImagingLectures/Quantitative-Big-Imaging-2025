@@ -34,4 +34,3 @@
 <li>Familiarity with vocabulary, tools, and main concepts of big data</li>
 <li>Awareness of the differences between normal and big data approaches</li>
 <li>Ability to explain MapReduce and apply it to a simple problem</li>
-
