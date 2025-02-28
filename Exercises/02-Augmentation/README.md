@@ -1,14 +1,17 @@
-![](../../docs/figures/np_data_3132352_000000.png)
 # Exercise for lecture 2 - Data augmentation
 
-## Preparation
-- Sync your QBI folder with Github (```git pull```)
-- Unpack ```02_Files.zip```
-- Start Jupyter
+## Learning Objectives
+- Explore data
+- Augment data
+- Train a simple model and evaluate the effect of using augmented data
 
-## Objectives
-- How to augment images
-- Working with a baseline algorithm
+## Preparation
+- Accept assignment: https://classroom.github.com/a/Zz9PEnY2
+- Clone your student repository (```git clone```)
+- Run `uv sync` and check everything is correct with `uv run hello.py`
+- `cd exercise`
+- Unzip ```02_Files.zip```
+- Start Jupyter
 
 ## Exercise
 1. Evaluate the nearest neighbour baseline "properly" in this notebook.

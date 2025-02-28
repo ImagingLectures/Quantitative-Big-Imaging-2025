@@ -60,9 +60,11 @@ Implement the functions to:
 In 1965, engineer Gordon Moore predicted that transistors on a chip would double every two years in the coming decade [1]. You’ll compare Moore’s prediction against actual transistor counts in the 53 years following his prediction. You will determine the best-fit constants to describe the exponential growth of transistors on semiconductors compared to Moore’s Law.
 
 Your empirical model assumes that the number of transistors per semiconductor follows an exponential growth,
+
 $$
-\log(\text{transistor\_count})= f(\text{year}) = A\cdot \text{year}+B,
+\log(\text{transistorcount})= f(\text{year}) = A\cdot \text{year}+B,
 $$
+
 where $A$ and $B$ are fitting constants. We will use semiconductor manufacturers’ data to find the fitting constants. We can find the constants of Moore Law $A_M$ and $B_M$ knowing that:
 1. the number of transistors double every two years: `transistors_count(year+2) = 2* transistors_count(year)`
 2. start at 2250 transistors in 1971: `transistors_count(1971) = 2250`
@@ -72,6 +74,7 @@ Implement the functions marked as task 4.1.
 Task 4.2.: implement the function to load the data from a `.csv` file using [`np.loadtxt`](https://numpy.org/doc/stable/reference/generated/numpy.loadtxt.html). Import only the second and third rows and skip the first row. The function must return a numpy array where the first column contain the years and the second column the number of transistors.
 
 Now we want to estimate $A$ and $B$ from the data knowing we have the linear model $y_i = A\cdot \text{year} +B$ where `y_i = log(transistors_count_i)`. The best fit can be obtained via minimization of the least-square problem:
+
 $$
 X \boldsymbol{\beta} = y, \quad \text{where} \quad
 \boldsymbol{\beta} =
@@ -82,6 +85,7 @@ B
 $$
 
 In task 4.3, you will implement a least square problem solver. Given a design matrix $X$ and target variable $y$, the optimal parameter $\beta$ that fits the data is given by:
+
 $$
 \boldsymbol{\beta} = (X^T X)^{-1} X^T y
 $$
