@@ -22,3 +22,12 @@
   clear: both;
   display: table;
 }
+
+figcaption {
+  background-color: darkgray;
+  color: white;
+  font-style: italic;
+  font-size: medium;
+  padding: 2px;
+  text-align: left;
+}
