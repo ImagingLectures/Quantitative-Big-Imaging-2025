@@ -10,9 +10,6 @@
 - Run `uv sync` and check everything is correct with `uv run hello.py`
 - Start Jupyter
 
-## Exercise
-1. Evaluate on images the SNR according to different definitions
-2. Tune the parameters of different filters in different noise conditions to achieve a target MSE.
 
 # Exercise
 Notebook `04-Fossil.ipynb` has shown you how to apply a threshold on an image to segment it into a bilevel image. The performance of the threshold was improved by applying a filter that reduced the noise levels in the image. Now you can try this workflow on a different image.
