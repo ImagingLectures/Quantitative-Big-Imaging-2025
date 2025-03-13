@@ -25,17 +25,7 @@ def dice_coefficient(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     Raises:
         ValueError: If inputs are not the same shape.
     """
-    if y_true.shape != y_pred.shape:
-        raise ValueError("Input masks must have the same shape.")
-
-    intersection = np.sum(y_true * y_pred)
-    denominator = np.sum(y_true) + np.sum(y_pred)
-
-    if denominator == 0:
-        return 1.0  # If both masks are empty, consider perfect match
-
-    return 2. * intersection / denominator
-
+    raise NotImplementedError("Complete the dice_coefficient() function")
 
 def jaccard_index(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     """
@@ -60,12 +50,7 @@ def jaccard_index(y_true: np.ndarray, y_pred: np.ndarray) -> float:
     Raises:
         ValueError: If inputs are not the same shape.
     """
-    if y_true.shape != y_pred.shape:
-        raise ValueError("Input masks must have the same shape.")
-
-    intersection = np.sum(y_true * y_pred)
-    union = np.sum(y_true) + np.sum(y_pred) - intersection
-    return intersection / union if union > 0 else 1.0  # Handle case where both masks are empty
+    raise NotImplementedError("Complete the jaccard_index() function")
 
 
 def create_mask() -> np.ndarray:
@@ -76,14 +61,4 @@ def create_mask() -> np.ndarray:
         np.ndarray: _description_
     """
     data = imread("teeth_image.tif")
-
-    filter_teeth_data = median_filter(data, (3,3,3))
-
-    threshold = 50 # set the correct threshold here
-    thresh_filt_teeth_data = filter_teeth_data > threshold
-
-    thresh_filt_teeth_data = binary_closing(thresh_filt_teeth_data)
-    return thresh_filt_teeth_data
-
-    # Create a mask of the data
     raise NotImplementedError("Complete the create_mask() function")
