@@ -1,24 +1,26 @@
-![](../../docs/figures/np_segmentation_4159870_000000.svg)
-# Exercises for lecture 4 - Basic segmentation
+# Exercise for lecture 4 - Image Segmentation
+
+## Learning Objectives
+- Explore a basic segmentation pipeline with filtering and thresholding
+- Evaluate the quality of the segmentation when a ground truth is available
 
 ## Preparation
-- Sync your QBI folder with Github (```git pull```)
-- The images we use for this exercise are located in the ```./data``` folder.
+- Accept assignment: https://classroom.github.com/a/kMf68qK6
+- Clone your student repository (```git clone```)
+- Run `uv sync` and check everything is correct with `uv run hello.py`
 - Start Jupyter
 
-## Notebooks / Python
-- [Python Fossil Segmentation Exercises](https://github.com/ImagingLectures/Quantitative-Big-Imaging-2024/blob/main/Exercises/04-Segmentation/04-Fossil.ipynb)
-    - [Partial solution, with the code provided](https://github.com/ImagingLectures/Quantitative-Big-Imaging-2024/blob/main/Exercises/04-Segmentation/04-Fossil_guided.ipynb). The last part with the nerve is still up to you to solve.
-- [Python Nerve Segmentation Exercises](https://github.com/ImagingLectures/Quantitative-Big-Imaging-2024/blob/main/Exercises/04-Segmentation/04-Exercises.ipynb).
-- 
-# Further exercises if you want more
-## Kaggle
 
- - [Kaggle Dataset Overview](https://www.kaggle.com/kmader/qbi-image-segmentation)
- - [Bone Segmentation](https://www.kaggle.com/kmader/segmenting-cells-in-bone-data)
- - [Another Fossil Segmentation](https://www.kaggle.com/kmader/teeth-fossil-viewing)
+# Exercise
+Notebook `04-Fossil.ipynb` has shown you how to apply a threshold on an image to segment it into a bilevel image. The performance of the threshold was improved by applying a filter that reduced the noise levels in the image. Now you can try this workflow on a different image.
 
-## Hard Exercises
+ 1. Repeat the same analysis to the teeth fossil data (```teeth_image.tif```)
+ 2. Adjust the threshold and angles to try and see the gut structure better
+ 3. Improve the filters by using more advanced techniques and windows (bonus for non-local means)
 
- - [Cell Segmentation on Kaggle](https://www.kaggle.com/gaborvecsei/basic-pure-computer-vision-segmentation-lb-0-229) or [binder](http://mybinder.org/v2/gh/kmader/quantitative-big-imaging-2024/master?filepath=Kaggle_Competitions/CV_CellSegmentation.ipynb)
+In `tasks.py` you will have to implement to common metrics to evalaute segmentation masks:
+- [Dice coefficient](https://en.wikipedia.org/wiki/Dice-S%C3%B8rensen_coefficient)
+- [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index)
 
+First, you will have to read about the metrics and implement them to pass the corresponding tests.
+Then, you will have to implement a basic segmentation pipeline on the dataset `teeth_image.tif` that achieves a `dice_coefficient > 0.95` and a `jaccard_index > 0.95`
