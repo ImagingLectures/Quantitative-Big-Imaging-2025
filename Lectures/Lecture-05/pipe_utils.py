@@ -36,9 +36,13 @@ def display_data(in_ax, raw_data, show_hist,show_legend=True):
             in_ax.imshow(montage2d(n_stack))
 
 
-def show_pipe(pipe, in_data, show_hist=False, show_legend=True, panels_in_row=3):
+def show_pipe(pipe, in_data, show_hist=False, show_legend=True, panels_in_row=3, figsize=None):
     m_rows = np.ceil((len(pipe.steps)+1)/panels_in_row).astype(int)
-    fig, t_axs = plt.subplots(m_rows, panels_in_row, figsize=(12, 4*m_rows))
+    if figsize is None :
+        figsize=(12, 4*m_rows)
+    else:
+        figsize[1]=figsize[1]*m_rows
+    fig, t_axs = plt.subplots(m_rows, panels_in_row, figsize=figsize)
     m_axs = t_axs.flatten()
     [c_ax.axis('off') for c_ax in m_axs]
     last_data = in_data
