@@ -112,3 +112,9 @@ venv.bak/
 # *.tif
 # *.tiff
 _MACOSX
+
+
+*.tar.gz
+Exercises/05-AdvancedSegmentation/images
+Exercises/05-AdvancedSegmentation/annotations
+Exercises/05-AdvancedSegmentation/lightning_logs

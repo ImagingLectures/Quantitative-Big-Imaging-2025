@@ -1,5 +1,5 @@
 [project]
-name = "quantitative-big-imaging-2025-remake"
+name = "05-advancedsegmentation"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -7,17 +7,24 @@ requires-python = ">=3.11"
 dependencies = [
     "albumentations>=2.0.4",
     "ipykernel>=6.29.5",
+    "ipython-genutils>=0.2.0",
     "ipython>=8.32.0",
     "ipyvolume>=0.6.3",
+    "ipywidgets>=8.1.5",
+    "lightning>=2.5.1",
     "matplotlib>=3.10.0",
+    "notebook>=7.3.2",
     "numpy>=2.2.2",
     "pandas>=2.2.3",
     "pytest>=8.3.4",
+    "pywavelets>=1.8.0",
     "scikit-image>=0.25.1",
     "scikit-learn>=1.6.1",
     "scipy>=1.15.1",
     "seaborn>=0.13.2",
+    "segmentation-models-pytorch",
+    "tqdm>=4.67.1",
 ]
 
-[tool.uv.workspace]
-members = ["Exercises/05-AdvancedSegmentation"]
+[tool.uv.sources]
+segmentation-models-pytorch = { git = "https://github.com/qubvel-org/segmentation_models.pytorch" }
