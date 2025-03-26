@@ -117,13 +117,13 @@
     "pdf":"https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/lecturenotes/QBI-Lecture05-AdvancedSegmentation.pdf",
     "videos":[{
                 "label":"Part 1",
-                "link":"https://youtu.be/6oXP_W9WjHM",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/SCqpvicW9P8",
+                "icon":"figures/YouTube.svg"
             },
             {
                 "label":"Part 2",       
-                "link":"https://youtu.be/_wfm4Mylp3o",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/SUe299oBxo8",
+                "icon":"figures/YouTube.svg"
             }],
     "exercises":"https://github.com/ImagingLectures/Quantitative-Big-Imaging-2025/tree/main/Exercises/05-AdvancedSegmentation"
 },
