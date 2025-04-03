@@ -13,6 +13,7 @@ resolution-markers = [
 members = [
     "05-advancedsegmentation",
     "06-shapes",
+    "07-complexobjects",
     "quantitative-big-imaging-2025-remake",
 ]
 
@@ -87,6 +88,39 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "albumentations", specifier = ">=2.0.4" },
+    { name = "ipykernel", specifier = ">=6.29.5" },
+    { name = "ipython", specifier = ">=8.32.0" },
+    { name = "ipyvolume", specifier = ">=0.6.3" },
+    { name = "matplotlib", specifier = ">=3.10.0" },
+    { name = "numpy", specifier = ">=2.2.2" },
+    { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pytest", specifier = ">=8.3.4" },
+    { name = "scikit-image", specifier = ">=0.25.1" },
+    { name = "scikit-learn", specifier = ">=1.6.1" },
+    { name = "scipy", specifier = ">=1.15.1" },
+    { name = "seaborn", specifier = ">=0.13.2" },
+]
+
+[[package]]
+name = "07-complexobjects"
+version = "0.1.0"
+source = { virtual = "Exercises/07-ComplexObjects" }
+dependencies = [
+    { name = "ipykernel" },
+    { name = "ipython" },
+    { name = "ipyvolume" },
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "pandas" },
+    { name = "pytest" },
+    { name = "scikit-image" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "seaborn" },
+]
+
+[package.metadata]
+requires-dist = [
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "ipython", specifier = ">=8.32.0" },
     { name = "ipyvolume", specifier = ">=0.6.3" },
