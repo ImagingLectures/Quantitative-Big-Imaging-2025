@@ -20,4 +20,4 @@ dependencies = [
 ]
 
 [tool.uv.workspace]
-members = ["Exercises/05-AdvancedSegmentation", "Exercises/06-Shapes", "Exercises/07-ComplexObjects"]
+members = ["Exercises/05-AdvancedSegmentation", "Exercises/06-Shapes", "Exercises/07-ComplexObjects", "Exercises/08-Statistics", "Exercises/09-DynamicExperiments"]
