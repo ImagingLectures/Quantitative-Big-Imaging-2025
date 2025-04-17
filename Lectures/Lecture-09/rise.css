@@ -16,6 +16,12 @@
   padding: 5px;
 }
 
+.column14 {
+  float: left;
+  width: 24%;
+  padding: 5px;
+}
+
 .column25 {
   float: left;
   width: 40%;
