@@ -166,13 +166,13 @@
     "pdf":"https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/lecturenotes/QBI-Lecture07-ComplexShape.pdf",
     "videos":[{
                 "label":"Part 1",
-                "link":"https://youtu.be/Qebl0Poeldk",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/QfJ-PiUs1ZI",
+                "icon":"figures/YouTube.svg"
             },
             {
                 "label":"Part 2",       
-                "link":"https://youtu.be/QEdEwRo3VSc",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/LMaBzgtAq28",
+                "icon":"figures/YouTube.svg"
             }],
     "exercises":"https://github.com/ImagingLectures/Quantitative-Big-Imaging-2025/tree/main/Exercises/07-ComplexObjects"
 },   
@@ -188,18 +188,13 @@
     "pdf":"https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/lecturenotes/QBI-Lecture08-Statistics.pdf",
     "videos":[{
                 "label":"Part 1",
-                "link":"https://youtu.be/TIOXzGdZHQQ",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/9axJ8tNn7OY",
+                "icon":"figures/YouTube.svg"
             },
             {
                 "label":"Part 2",       
-                "link":"https://youtu.be/xHPxXCgbmlQ",
-                "icon":"figures/YouTube_OldRecording.svg"
-            },
-            {
-                "label":"Part 3",       
-                "link":"https://youtu.be/e7_hZIoFGc4",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/LjHvb3PjmIg",
+                "icon":"figures/YouTube.svg"
             }],
     "exercises":"https://github.com/ImagingLectures/Quantitative-Big-Imaging-2025/tree/main/Exercises/08-Statistics"
 },
@@ -215,13 +210,13 @@
     "pdf":"https://imaginglectures.github.io/Quantitative-Big-Imaging-2025/lecturenotes/QBI-Lecture09-DynamicExperiments.pdf",
     "videos":[{
                 "label":"Part 1",
-                "link":"https://youtu.be/pLRW19Anf3w",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/EB6tsHc-JJY",
+                "icon":"figures/YouTube.svg"
             },
             {
                 "label":"Part 2",       
-                "link":"https://youtu.be/JxNjScURDOQ",
-                "icon":"figures/YouTube_OldRecording.svg"
+                "link":"https://youtu.be/I2xgrXz9PL0",
+                "icon":"figures/YouTube.svg"
             }],
     "exercises":""
 },
@@ -238,7 +233,7 @@
 {
     "index":"-",
     "icon":"figures/np_flower_752007_000000.svg",
-    "title":"Workers break (no lecture) - Project consultation",
+    "title":"Labourers day (no lecture) - Project consultation",
     "date":"1 May",
     "notebook":[],
     "pdf":"",
